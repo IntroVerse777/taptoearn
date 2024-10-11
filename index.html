@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tap Game with Solana Integration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="registration" class="registration-container">
+        <h2>Welcome to the Tap Game!</h2>
+        <p>Please enter your username and Solana wallet address to get started.</p>
+        <form id="userForm">
+            <input type="text" id="username" placeholder="Username" required><br>
+            <input type="text" id="walletAddress" placeholder="Solana Wallet Address" required><br>
+            <button type="submit">Start Game</button>
+        </form>
+    </div>
+
+    <div id="game" class="game-container" style="display: none;">
+        <h1 id="welcomeMessage">Welcome, Player!</h1>
+        <div class="cat-container">
+            <img id="catImage" src="images/Untitled design(7) copy.png" alt="Cat" onclick="popCat()">
+        </div>
+        <h2>Clicks: <span id="clickCounter">0</span></h2>
+        <h3>Leaderboard</h3>
+        <div id="leaderboard"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
